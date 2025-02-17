@@ -36,7 +36,7 @@ def test_get_author_info_name():
     new_name = 'john'
     result = get_author_info(['-n', old_name, new_name], STEP)
     assert isinstance(result, dict), "Expected a tuple"
-    assert result == { 'old_name': old_name, 'new_name': new_name }, 'Expected to retrieve a names'
+    assert result == { 'old_name': old_name, 'new_name': new_name }, 'Expected to retrieve names'
 
 
 def test_get_author_info_email():
